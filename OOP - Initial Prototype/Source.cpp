@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Admin.h"
 #include "Utils.h"
+#include "Date.h"
 
 // TODO: Remove from global scope once menu system is integrated
 Application app;
@@ -64,7 +65,7 @@ char showMainMenuAndGetUserChoice()
 		std::cout << "  L) Login      \n";
 	}
 
-	std::cout << "                    \n";
+	std::cout << "  D) Debug Date     \n";
 	std::cout << "  B) Exit           \n";
 	std::cout << "                    \n";
 	std::cout << "                    \n";
@@ -236,6 +237,15 @@ void mainMenu()
 			case 'S': {
 				storeMenu();
 			} break;
+			case 'D':
+				{
+					Date d;
+					Date d2 = d.getCurrentDate();
+
+					std::cout << "Date: " << d2.toString(d2) << std::endl;
+					system("pause");
+					
+				} break;
 			case 'L': {
 				if (app.IsUserLoggedIn())
 				{
