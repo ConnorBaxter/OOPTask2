@@ -1,0 +1,84 @@
+# depslib dependency file v1.0
+1619689484 source:e:\oop\initproto\account.cpp
+	"Account.h"
+
+1619690117 e:\oop\initproto\account.h
+	<string>
+	"Player.h"
+
+1619680351 e:\oop\initproto\player.h
+	<string>
+	"LibraryItem.h"
+	"User.h"
+
+1619526871 e:\oop\initproto\libraryitem.h
+	"Game.h"
+
+1618730470 e:\oop\initproto\game.h
+	<string>
+
+1619681011 e:\oop\initproto\user.h
+	<string>
+
+1619680386 source:e:\oop\initproto\admin.cpp
+	"Admin.h"
+
+1619680410 e:\oop\initproto\admin.h
+	<string>
+	"Player.h"
+
+1619003005 source:e:\oop\initproto\application.cpp
+	"Application.h"
+
+1619003802 e:\oop\initproto\application.h
+	"Account.h"
+	"User.h"
+	"Store.h"
+
+1619081186 e:\oop\initproto\store.h
+	"Game.h"
+
+1618730470 source:e:\oop\initproto\game.cpp
+	"Game.h"
+
+1619526858 source:e:\oop\initproto\libraryitem.cpp
+	"LibraryItem.h"
+
+1619680351 source:e:\oop\initproto\player.cpp
+	"Player.h"
+
+1618730470 source:e:\oop\initproto\store.cpp
+	"Store.h"
+
+1619680991 source:e:\oop\initproto\user.cpp
+	"User.h"
+	<string>
+
+1618730470 source:e:\oop\initproto\utils.cpp
+	"Utils.h"
+
+1618730470 e:\oop\initproto\utils.h
+	<string>
+	<iostream>
+
+1619689713 source:e:\oop\initproto\source.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Application.h"
+	"Account.h"
+	"User.h"
+	"Player.h"
+	"Admin.h"
+	"Utils.h"
+	<limits>
+	"ListT.h"
+
+1618805260 source:e:\oop\initproto\date.cpp
+	<iostream>
+	<ctime>
+
+1619684837 e:\oop\initproto\listt.h
+	<string>
+	<assert.h>
+

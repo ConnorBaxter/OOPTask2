@@ -17,11 +17,13 @@ class Application
 
 		Store& GetStore();
 
-		bool LoginAccount(const std::string& email, const std::string& password);
-		bool LoginUser(const std::string& username, const std::string& password);
+		bool LoginAccount(const std::string& email, const std::string& password, int userIndex);
+		bool LoginUser(const std::string& username, const std::string& password, int userIndex);
+		void LogoutAccount();
 		void LogoutUser();
-		
+
 		Account* accounts[1] = { }; // TODO: this needs changing to a dynamic collection
+		Player* player[1] = { }; // TODO: this needs changing to a dynamic collection
 	private:
 		Store store;
 		Account* currentAccount;
