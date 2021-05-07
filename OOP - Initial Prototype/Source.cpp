@@ -461,6 +461,7 @@ char showLoginUserMenuAndGetUserChoice(Account *account)
 	for (int i = 0; i < listUser.length(); i++) // TODO: Hardcoded, change when using List<T>
 	{
 		std::cout << "  " << (i + 1) << ") " << account->users[i]->GetUsername() << "\n";
+		//std::cout << "  " << (i + 1) << ") " << account->users[i]->Item.GetUsername() << "\n";
 	}
 
 	if (app.IsAccountLoggedIn())
