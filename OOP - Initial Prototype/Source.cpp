@@ -790,7 +790,7 @@ void loginUserMenu()
 				if (index >= 0 && index < listUser.length()) // TODO: Hardcoded numbers, change when using List<T>
 				{
 					std::string username = app.GetCurrentAccount()->users[index]->GetUsername();
-					std::string userPassword = app.GetCurrentAccount()->users[index]->GetPassword();
+					std::string userPassword = app.GetCurrentAccount()->users[index]->GetUsername();
 
 					std::cout << "  Enter password for " << username << ": ";
 					if(Utils::getLineFromUser() == userPassword){

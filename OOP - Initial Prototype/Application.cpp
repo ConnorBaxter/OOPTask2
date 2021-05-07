@@ -52,6 +52,9 @@ void Application::LogoutAccount()
 
 bool Application::LoginUser(const std::string& username, const std::string& password, int userIndex)
 {
+	//This wont work, compiles but returns null?
+	//currentUser = currentAccount->users.getItemAtIndex[userIndex];
+	
 	// TODO: This currently always logs you in as the first user
 	currentUser = currentAccount->users[userIndex];
 

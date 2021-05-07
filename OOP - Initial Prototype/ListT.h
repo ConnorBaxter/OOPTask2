@@ -62,6 +62,9 @@ class List
     void deleteOne(const T&);                // delete first occurrence of item
     int length() const;                      // return length
     bool contains(const T&) const;           // check if an item is in list
+
+    T operator []  (const int& index);
+
   private:
     Node<T>* head;                           // point onto first item (nullptr if empty)
     Node<T>* end() const;                    // return address of last item (nullptr if empty)
@@ -129,6 +132,34 @@ bool List<T>::operator == (const List<T>& rhs) const
         }
     }
 }
+
+/* This just wont work no matter what I do :(
+
+// To make sure this would compile at submission
+   I have remoeved all imlemetation of this. Anywhere
+   a TODO was present this was called using users[some_index]->GetValue();
+   but would never return correct value. Also tried a this.getItemAtIndex(int index)
+   style implementation but again with no luck
+
+template<class T>
+inline T List<T>::operator[](const int& index)
+{
+    T val;
+    List<T> lCopy = *this;
+
+    if (index > lCopy.length()) return nullptr;
+
+    val = lCopy.head;
+    for(int i = 0; i < index; i++)
+    {
+        lCopy.deleteFirst();
+        val = lCopy.head;
+    }
+
+    return val;
+}
+*/
+
 
 template <class T>
 bool List<T>::isEmpty() const

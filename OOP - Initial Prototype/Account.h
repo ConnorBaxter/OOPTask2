@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "ListT.h"
 #include "Player.h"
 
 class Account
@@ -11,6 +12,10 @@ class Account
 		const std::string& GetEmail() const;
 		const std::string& GetPassword() const;
 		User* users[4] = { }; // TODO: replace with custom List<T> class
+
+		// This just will not work
+		//const List<User> users = List<User>();
+		
 	private:
 		std::string email;
 		std::string password;
